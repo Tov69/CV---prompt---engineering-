@@ -38,7 +38,8 @@
     box-shadow: 0 4px 40px rgba(0,0,0,0.12);
     display: grid;
     grid-template-columns: 270px 1fr;
-    min-height: 100%;
+    min-height: calc(100vh - 4rem);
+    align-items: start;
   }
 
   /* ── SIDEBAR ── */
@@ -96,6 +97,7 @@
     font-size: 0.78rem;
     color: var(--sidebar-text);
     line-height: 1.4;
+    word-break: break-all;
   }
 
   .contact-list li span {
@@ -156,54 +158,6 @@
   .lang-level {
     font-size: 0.65rem;
     color: var(--sidebar-muted);
-  }
-
-  .avail-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: rgba(90,200,120,0.1);
-    border: 1px solid rgba(90,200,120,0.3);
-    padding: 0.35rem 0.7rem;
-    border-radius: 3px;
-    font-size: 0.7rem;
-    color: #7ecf9a;
-    font-weight: 500;
-  }
-
-  .avail-dot {
-    width: 6px;
-    height: 6px;
-    background: #5ec97a;
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-  }
-
-  .platform-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  .platform-list li {
-    font-size: 0.73rem;
-    color: var(--sidebar-muted);
-    padding-left: 0.8rem;
-    position: relative;
-  }
-
-  .platform-list li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--gold);
-    font-size: 0.65rem;
   }
 
   /* ── MAIN ── */
@@ -454,26 +408,11 @@
       <div class="sidebar-rule"></div>
     </div>
 
-    <!-- Availability -->
-    <div>
-      <div class="s-section-label">Status</div>
-      <div class="avail-badge">
-        <span class="avail-dot"></span>
-        Open to Remote Work
-      </div>
-      <ul class="platform-list" style="margin-top:0.7rem">
-        <li>Mercor</li>
-        <li>Fiverr</li>
-        <li>Contra</li>
-        <li>Direct Consulting</li>
-      </ul>
-    </div>
-
     <!-- Contact -->
     <div>
       <div class="s-section-label">Contact</div>
       <ul class="contact-list">
-        <li><span>Email</span>your.email@example.com</li>
+        <li><span>Email</span>akorclems@gmail.com</li>
         <li><span>Location</span>Port Harcourt, Nigeria</li>
         <li><span>Timezone</span>WAT (UTC +1)</li>
         <li><span>Device</span>Mobile-first workflow</li>
@@ -537,7 +476,7 @@
     <div>
       <div class="niche-tag">⚕ Pharma × AI — Rare Niche Profile</div>
       <div class="summary-block">
-        <p>Pharmacy graduate with hands-on expertise in LLM prompt engineering, AI agent design, and domain-specific AI tutor systems. I bridge clinical pharmaceutical knowledge with applied AI to deliver high-quality training data, structured content, and intelligent tutoring solutions — a combination few candidates bring to the global gig market.</p>
+        <p>Final-year pharmacy student (B.Pharm, in view) with hands-on expertise in LLM prompt engineering, AI agent design, and domain-specific AI tutor systems. I bridge clinical pharmaceutical knowledge with applied AI to deliver high-quality training data, structured content, and intelligent tutoring solutions — a combination few candidates bring to the global gig market.</p>
       </div>
     </div>
 
